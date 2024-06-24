@@ -1,0 +1,31 @@
+.menu ul {
+  margin: 0;
+  list-style: square;
+  padding-left: 20px;
+  display: none;
+}
+
+.menu .title {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.menu .title::before {
+  content: "▶ ";
+  font-size: 80%;
+  color: green;
+}
+*/ .menu.open .title::before {
+  content: "▼ ";
+}
+
+.menu.open ul {
+  display: block;
+}
+
+/* .tree span {
+  cursor: pointer;
+}
+.tree span:hover {
+  font-weight: bold;
+} */
